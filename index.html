@@ -3,284 +3,372 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ghouse Ahmed | Product Owner & Sr. Business Systems Analyst</title>
-
-    <!-- Google Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700;900&family=Raleway:wght@300;400;600&display=swap" rel="stylesheet">
-
-    <!-- Font Awesome Icons -->
+    <title>Ghouse Ahmed Syed — Keeper of the Bridge</title>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400;1,600&family=Outfit:wght@300;400;500;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-
-    <!-- Your Stylesheet -->
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <div class="cursor-dot"></div>
+    <div class="cursor-ring"></div>
 
-    <!-- ========== NAVIGATION ========== -->
-    <nav class="navbar">
-        <div class="nav-logo">GA</div>
+    <div class="loader" id="loader">
+        <div class="loader-inner">
+            <div class="loader-letters"><span>G</span><span>A</span><span>S</span></div>
+            <div class="loader-bar"><div class="loader-progress"></div></div>
+            <p class="loader-tagline">Keeper of the Bridge</p>
+        </div>
+    </div>
+
+    <nav class="nav" id="nav">
+        <div class="nav-logo">GAS<span class="nav-dot"></span></div>
         <ul class="nav-links">
             <li><a href="#about">About</a></li>
             <li><a href="#experience">Experience</a></li>
             <li><a href="#skills">Skills</a></li>
             <li><a href="#projects">Projects</a></li>
             <li><a href="#education">Education</a></li>
-            <li><a href="#contact">Contact</a></li>
         </ul>
-        <a href="#contact" class="nav-cta">Let's Connect</a>
+        <a href="#contact" class="nav-cta">Open the Bridge</a>
     </nav>
 
-    <!-- ========== HERO SECTION ========== -->
+    <!-- HERO -->
     <section id="hero">
+        <canvas id="bifrost-canvas"></canvas>
         <div class="hero-content">
-            <p class="hero-greeting">👋 Welcome, I'm</p>
-            <h1 class="hero-name">Ghouse Ahmed</h1>
-            <h2 class="hero-title">
-                <span class="typed-text"></span>
-                <span class="cursor">|</span>
-            </h2>
-            <p class="hero-tagline">Where Business Strategy Meets Technical Execution</p>
-            <div class="hero-buttons">
-                <a href="#projects" class="btn btn-primary">View My Work</a>
-                <a href="#contact" class="btn btn-secondary">Let's Connect</a>
+            <div class="hero-eyebrow">
+                <span class="ey-line"></span>
+                <span>Product Owner · Sr. Business Systems Analyst</span>
+                <span class="ey-line"></span>
+            </div>
+            <h1 class="hero-heading">
+                <span class="hh-line">KEEPER</span>
+                <span class="hh-line hh-of">of the</span>
+                <span class="hh-line hh-gold">BRIDGE</span>
+            </h1>
+            <p class="hero-quote">"I stand at the crossroads of two worlds — where the complexity of human health data meets the pulse of energy infrastructure. For over a decade, I have been the guardian between what business needs and what technology can build."</p>
+            <div class="hero-ident">
+                <span class="hero-name">Ghouse Ahmed Syed</span>
+                <span class="hero-sep">·</span>
+                <span class="hero-city">Chicago, Illinois</span>
             </div>
             <div class="hero-stats">
-                <div class="stat">
-                    <span class="stat-number">12+</span>
-                    <span class="stat-label">Years Experience</span>
-                </div>
-                <div class="stat">
-                    <span class="stat-number">2</span>
-                    <span class="stat-label">Industry Domains</span>
-                </div>
-                <div class="stat">
-                    <span class="stat-number">36</span>
-                    <span class="stat-label">BCBS Plans Impacted</span>
-                </div>
-                <div class="stat">
-                    <span class="stat-number">54K+</span>
-                    <span class="stat-label">Records Analyzed</span>
-                </div>
+                <div class="hstat"><span class="hstat-n" data-count="12">0</span><span class="hstat-plus">+</span><span class="hstat-l">Years<br>Experience</span></div>
+                <div class="hstat-div"></div>
+                <div class="hstat"><span class="hstat-n" data-count="36">0</span><span class="hstat-l">BCBS Plans<br>Impacted</span></div>
+                <div class="hstat-div"></div>
+                <div class="hstat"><span class="hstat-n" data-count="54">0</span><span class="hstat-plus">K+</span><span class="hstat-l">Provider Records<br>Analyzed</span></div>
+                <div class="hstat-div"></div>
+                <div class="hstat"><span class="hstat-n" data-count="50">0</span><span class="hstat-l">States<br>Served</span></div>
+            </div>
+            <div class="hero-actions">
+                <a href="#experience" class="btn-gold">Enter My World <i class="fas fa-chevron-down"></i></a>
+                <a href="#contact" class="btn-ghost">Open the Bridge <i class="fas fa-arrow-right"></i></a>
             </div>
         </div>
-        <div class="hero-visual">
-            <div class="hero-circle">
-                <div class="circle-ring ring-1"></div>
-                <div class="circle-ring ring-2"></div>
-                <div class="circle-ring ring-3"></div>
-                <div class="initials">GA</div>
-            </div>
-        </div>
+        <div class="scroll-cue"><div class="scroll-mouse"><div class="scroll-wheel"></div></div><span>Scroll</span></div>
     </section>
 
-    <!-- ========== ABOUT SECTION ========== -->
+    <!-- ABOUT -->
     <section id="about">
-        <div class="section-container">
-            <h2 class="section-title">About Me</h2>
+        <canvas id="neural-canvas"></canvas>
+        <div class="sec-inner">
+            <div class="sec-label"><span class="sl-num">01</span><span class="sl-name">The Realm</span></div>
             <div class="about-grid">
-                <div class="about-text">
-                    <p>Throughout my career at the intersection of business and technology, I've built my work around one core belief — <strong>the best technology solutions start with deeply understanding people</strong> — their workflows, their pain points, and the outcomes they're trying to achieve.</p>
-                    <p>I work as a <strong>Product Owner and Senior Business Systems Analyst</strong>, specializing in Healthcare IT and Utility & Energy Efficiency — delivering solutions for some of the largest health insurers and energy efficiency programs in the country.</p>
-                    <p>My academic foundation spans the full spectrum of what this work demands — from information systems and cybersecurity, to global business and policy thinking. I've always believed that great technologists need to understand the broader world their solutions operate in. So that's exactly what I studied. And it shows in everything I do.</p>
-                    <p>I'm also deeply passionate about <strong>AI and automation</strong> — actively exploring how AI tools can accelerate requirements gathering, improve user story quality, and surface insights from complex datasets faster than ever before.</p>
+                <div class="ag-left">
+                    <h2 class="sec-title">Where Two <em>Worlds</em> Collide</h2>
+                    <p class="quote-text">"Every great bridge is built by someone who understands both shores. I have spent my career mastering two of the most complex domains in enterprise technology — not because I had to, but because complexity is where I thrive."</p>
+                    <p class="body-text">I work as a Product Owner and Senior Business Systems Analyst, translating the needs of massive enterprise systems into clear, actionable solutions. My academic foundation spans information technology, cybersecurity, international commerce, and policy — giving me a lens that most technologists simply do not have.</p>
+                    <p class="body-text">I am also deeply invested in the AI revolution — actively exploring how generative AI can transform the way business analysts work, requirements are gathered, and insights are surfaced at enterprise scale.</p>
                 </div>
-                <div class="about-cards">
-                    <div class="about-card">
-                        <i class="fas fa-heartbeat"></i>
-                        <h3>Healthcare IT</h3>
-                        <p>FHIR R4 • TriZetto Facets • HIPAA/EDI • Medicaid & Medicare</p>
-                    </div>
-                    <div class="about-card">
-                        <i class="fas fa-bolt"></i>
-                        <h3>Utility & Energy</h3>
-                        <p>Salesforce • Magento • Skedulo • Multi-State Deployments</p>
-                    </div>
-                    <div class="about-card">
-                        <i class="fas fa-robot"></i>
-                        <h3>AI & Automation</h3>
-                        <p>AI-Driven Analysis • Prompt Engineering • Process Automation</p>
-                    </div>
-                    <div class="about-card">
-                        <i class="fas fa-chart-line"></i>
-                        <h3>Agile & Product</h3>
-                        <p>Product Ownership • Backlog Management • SAFe • Scrum</p>
+                <div class="ag-right">
+                    <div class="domain-cards">
+                        <div class="dc healthcare-dc">
+                            <canvas class="dc-canvas" id="ecg-canvas" width="200" height="60"></canvas>
+                            <h3>Healthcare IT</h3>
+                            <p>FHIR R4 · TriZetto Facets · HIPAA/EDI · Provider Data · Interoperability · Medicaid & Medicare</p>
+                        </div>
+                        <div class="dc energy-dc">
+                            <canvas class="dc-canvas" id="energy-canvas" width="200" height="60"></canvas>
+                            <h3>Utility & Energy</h3>
+                            <p>Salesforce · Magento · Skedulo · Multi-State Programs · Energy Efficiency · eCommerce</p>
+                        </div>
+                        <div class="dc ai-dc">
+                            <canvas class="dc-canvas" id="ai-canvas" width="200" height="60"></canvas>
+                            <h3>AI & Automation</h3>
+                            <p>Generative AI · Prompt Engineering · AI-Driven Analysis · Process Automation · Future-Forward Thinking</p>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- ========== EXPERIENCE SECTION ========== -->
+    <!-- EXPERIENCE -->
     <section id="experience">
-        <div class="section-container">
-            <h2 class="section-title">Experience</h2>
-            <div class="timeline">
-
-                <div class="timeline-item">
-                    <div class="timeline-dot"></div>
-                    <div class="timeline-date">Dec 2021 – Present</div>
-                    <div class="timeline-content">
-                        <h3>Senior Business Systems Analyst</h3>
-                        <h4>CloudQ → CLEAResult <span class="badge">Contract</span></h4>
-                        <p>Delivered end-to-end business analysis and platform administration across three concurrent Atlas platform projects for utility clients spanning the entire United States.</p>
-                        <div class="tags">
-                            <span>Salesforce</span><span>Magento</span><span>Skedulo</span><span>Azure DevOps</span><span>Balsamiq</span>
+        <canvas id="stream-canvas"></canvas>
+        <div class="sec-inner">
+            <div class="sec-label"><span class="sl-num">02</span><span class="sl-name">The Campaigns</span></div>
+            <h2 class="sec-title">Realms I Have <em>Shaped</em></h2>
+            <p class="sec-quote">"These are not job titles. These are battles fought, systems built, and lives improved through the power of clear thinking and precise execution."</p>
+            <div class="campaigns">
+                <div class="camp">
+                    <div class="camp-top" onclick="toggleCampaign(this)">
+                        <div class="camp-left">
+                            <span class="camp-num">Campaign 01</span>
+                            <span class="camp-period">Dec 2021 — Present</span>
                         </div>
+                        <div class="camp-right">
+                            <h3>Senior Business Systems Analyst</h3>
+                            <span class="camp-co">CloudQ → CLEAResult</span>
+                        </div>
+                        <div class="camp-icon"><i class="fas fa-plus"></i></div>
+                    </div>
+                    <div class="camp-body">
+                        <p class="camp-quote">"The energy efficiency battlefield spans from the Pacific coast to the Atlantic. Three concurrent campaigns, seven utility clients, one objective — deliver seamless, scalable solutions."</p>
+                        <ul>
+                            <li>Administered Salesforce CRM and Magento eCommerce across multi-state utility platforms covering SDGE, PSGE, Black Hills Energy, Eversource, Consumers Energy, and South Jersey Industries</li>
+                            <li>Configured Skedulo scheduling platform with appointment workflows and dispatch logic for high-volume Home Energy Assessment programs</li>
+                            <li>Created Balsamiq wireframes for all major platform screens presented in JAD sessions before development commenced</li>
+                            <li>Served as primary client interface managing scope, UAT, and post-production support through to closure</li>
+                        </ul>
+                        <div class="camp-tools"><span>Salesforce</span><span>Magento</span><span>Skedulo</span><span>Azure DevOps</span><span>Balsamiq</span><span>Pimcore</span><span>Hancock Field Tool</span></div>
                     </div>
                 </div>
-
-                <div class="timeline-item">
-                    <div class="timeline-dot"></div>
-                    <div class="timeline-date">Feb 2021 – Dec 2021</div>
-                    <div class="timeline-content">
-                        <h3>Product Owner</h3>
-                        <h4>CloudQ → BCBSA <span class="badge">Contract</span></h4>
-                        <p>Owned the full product backlog for a nationwide Provider Data Transformation initiative impacting all 36 BCBS member plans across 50 states.</p>
-                        <div class="tags">
-                            <span>FHIR R4</span><span>Ataccama MDM</span><span>Azure DevOps</span><span>SAFe</span><span>MicroStrategy</span>
+                <div class="camp">
+                    <div class="camp-top" onclick="toggleCampaign(this)">
+                        <div class="camp-left">
+                            <span class="camp-num">Campaign 02</span>
+                            <span class="camp-period">Feb 2021 — Dec 2021</span>
                         </div>
+                        <div class="camp-right">
+                            <h3>Product Owner</h3>
+                            <span class="camp-co">CloudQ → BCBSA</span>
+                        </div>
+                        <div class="camp-icon"><i class="fas fa-plus"></i></div>
+                    </div>
+                    <div class="camp-body">
+                        <p class="camp-quote">"36 plans. 50 states. One backlog. The weight of a nation's healthcare data transformation rested on the clarity of every user story written."</p>
+                        <ul>
+                            <li>Owned the full product backlog for nationwide Provider Data Transformation impacting all 36 BCBS plans across 50 states</li>
+                            <li>Drove FHIR R4 Clinical Data Exchange implementation translating CMS interoperability mandates into precise API-based user stories</li>
+                            <li>Led Ataccama MDM implementation defining data governance specifications across 36 plan systems</li>
+                            <li>Delivered PDT/PDR Dashboard requirements providing real-time visibility into transformation progress across all plans</li>
+                        </ul>
+                        <div class="camp-tools"><span>FHIR R4</span><span>Ataccama MDM</span><span>Azure DevOps</span><span>SAFe</span><span>MicroStrategy</span><span>JIRA</span></div>
                     </div>
                 </div>
-
-                <div class="timeline-item">
-                    <div class="timeline-dot"></div>
-                    <div class="timeline-date">June 2018 – Sept 2020</div>
-                    <div class="timeline-content">
-                        <h3>Sr. Business Analyst / Provider Network SME</h3>
-                        <h4>TechUSA → BCBSIL via Trexin Consulting <span class="badge">Full-time</span></h4>
-                        <p>Led work across three major project groups at the largest health insurer in Illinois, serving over 106 million people.</p>
-                        <div class="tags">
-                            <span>TriZetto Facets</span><span>BINQ Portal</span><span>27X EDI</span><span>FHIR</span><span>HP Quality Center</span>
+                <div class="camp">
+                    <div class="camp-top" onclick="toggleCampaign(this)">
+                        <div class="camp-left">
+                            <span class="camp-num">Campaign 03</span>
+                            <span class="camp-period">June 2018 — Sept 2020</span>
                         </div>
+                        <div class="camp-right">
+                            <h3>Sr. Business Analyst / Provider Network SME</h3>
+                            <span class="camp-co">TechUSA → BCBSIL via Trexin Consulting</span>
+                        </div>
+                        <div class="camp-icon"><i class="fas fa-plus"></i></div>
+                    </div>
+                    <div class="camp-body">
+                        <p class="camp-quote">"54,000+ provider records broken. Medicare and Medicaid data flows severed. I found the breach. I analyzed the damage. I restored the flow."</p>
+                        <ul>
+                            <li>Created Master BRD for Network Reporting Services platform across all 36 BCBS plans nationwide</li>
+                            <li>Led requirements across 5 concurrent projects: BINQ 2.0, IPI/ICI/IBI/CRT, OMDB Rewrite, Member Lookup, and FHIR</li>
+                            <li>Performed forensic analysis restoring 54,000+ broken provider records in TriZetto Facets for Medicare/Medicaid reporting</li>
+                            <li>Authored Interface Control Document spanning Releases 1 through 4 for Government Provider Data Management</li>
+                        </ul>
+                        <div class="camp-tools"><span>TriZetto Facets</span><span>NetworX Pricer</span><span>BINQ Portal</span><span>27X EDI</span><span>FHIR</span><span>HP Quality Center</span></div>
                     </div>
                 </div>
-
             </div>
         </div>
     </section>
 
-    <!-- ========== SKILLS SECTION ========== -->
+    <!-- SKILLS -->
     <section id="skills">
-        <div class="section-container">
-            <h2 class="section-title">Skills & Tools</h2>
-            <div class="skills-grid">
-
-                <div class="skill-category">
-                    <h3><i class="fas fa-heartbeat"></i> Healthcare IT</h3>
-                    <div class="skill-tags">
-                        <span>TriZetto Facets</span><span>FHIR R4</span><span>HIPAA/EDI</span>
-                        <span>HL7</span><span>Ataccama MDM</span><span>BINQ Portal</span>
-                        <span>27X EDI</span><span>NetworX Pricer</span>
-                    </div>
+        <canvas id="grid-canvas"></canvas>
+        <div class="sec-inner">
+            <div class="sec-label"><span class="sl-num">03</span><span class="sl-name">The Arsenal</span></div>
+            <h2 class="sec-title">Tools of <em>My Craft</em></h2>
+            <p class="sec-quote">"A guardian is only as strong as the weapons they wield. These are mine — forged through years of enterprise battle."</p>
+            <div class="arsenal">
+                <div class="arcat ac-health">
+                    <div class="arcat-head"><i class="fas fa-heartbeat"></i><h3>Healthcare IT</h3></div>
+                    <div class="arcat-pills"><span>TriZetto Facets</span><span>FHIR R4</span><span>HIPAA/EDI</span><span>HL7 v2/v3</span><span>Ataccama MDM</span><span>BINQ Portal</span><span>27X EDI</span><span>NetworX Pricer</span><span>Availity</span></div>
                 </div>
-
-                <div class="skill-category">
-                    <h3><i class="fas fa-bolt"></i> Utility & eCommerce</h3>
-                    <div class="skill-tags">
-                        <span>Salesforce CRM</span><span>Magento</span><span>Skedulo</span>
-                        <span>Hancock Field Tool</span><span>Pimcore</span>
-                    </div>
+                <div class="arcat ac-energy">
+                    <div class="arcat-head"><i class="fas fa-bolt"></i><h3>Utility & Energy</h3></div>
+                    <div class="arcat-pills"><span>Salesforce CRM</span><span>Magento</span><span>Skedulo</span><span>Hancock Field Tool</span><span>Pimcore</span><span>SnapLogic</span></div>
                 </div>
-
-                <div class="skill-category">
-                    <h3><i class="fas fa-project-diagram"></i> Product & Agile</h3>
-                    <div class="skill-tags">
-                        <span>Product Ownership</span><span>Backlog Management</span>
-                        <span>Agile/Scrum</span><span>SAFe</span><span>JIRA</span>
-                        <span>Azure DevOps</span><span>Confluence</span>
-                    </div>
+                <div class="arcat ac-agile">
+                    <div class="arcat-head"><i class="fas fa-infinity"></i><h3>Product & Agile</h3></div>
+                    <div class="arcat-pills"><span>Product Ownership</span><span>Backlog Management</span><span>Agile/Scrum</span><span>SAFe</span><span>JIRA</span><span>Azure DevOps</span><span>Confluence</span></div>
                 </div>
-
-                <div class="skill-category">
-                    <h3><i class="fas fa-database"></i> Data & Integration</h3>
-                    <div class="skill-tags">
-                        <span>SnapLogic</span><span>MicroStrategy</span><span>SQL</span>
-                        <span>ODS/ETL</span><span>XML</span><span>JSON</span>
-                    </div>
+                <div class="arcat ac-data">
+                    <div class="arcat-head"><i class="fas fa-database"></i><h3>Data & Integration</h3></div>
+                    <div class="arcat-pills"><span>MicroStrategy</span><span>SQL Oracle</span><span>ODS/ETL</span><span>XML</span><span>JSON</span><span>Data Mapping</span><span>SnapLogic iPaaS</span></div>
                 </div>
-
-                <div class="skill-category">
-                    <h3><i class="fas fa-pencil-ruler"></i> Design & Analysis</h3>
-                    <div class="skill-tags">
-                        <span>Balsamiq</span><span>MS Visio</span><span>UML</span>
-                        <span>BRD</span><span>FRS</span><span>RTM</span>
-                    </div>
+                <div class="arcat ac-design">
+                    <div class="arcat-head"><i class="fas fa-pencil-ruler"></i><h3>Design & Analysis</h3></div>
+                    <div class="arcat-pills"><span>Balsamiq</span><span>MS Visio</span><span>UML</span><span>BRD/FRS</span><span>RTM</span><span>Use Cases</span><span>MS Project</span></div>
                 </div>
-
-                <div class="skill-category">
-                    <h3><i class="fas fa-robot"></i> AI & Modern Tech</h3>
-                    <div class="skill-tags">
-                        <span>Generative AI</span><span>Prompt Engineering</span>
-                        <span>AI-Driven Analysis</span><span>Process Automation</span>
-                    </div>
+                <div class="arcat ac-ai">
+                    <div class="arcat-head"><i class="fas fa-robot"></i><h3>AI & Modern Tech</h3></div>
+                    <div class="arcat-pills"><span>Generative AI</span><span>Prompt Engineering</span><span>AI-Driven Analysis</span><span>Process Automation</span><span>Microsoft Copilot</span></div>
                 </div>
-
             </div>
         </div>
     </section>
 
-    <!-- ========== EDUCATION SECTION ========== -->
+    <!-- PROJECTS -->
+    <section id="projects">
+        <canvas id="constellation-canvas"></canvas>
+        <div class="sec-inner">
+            <div class="sec-label"><span class="sl-num">04</span><span class="sl-name">The Conquests</span></div>
+            <h2 class="sec-title">Missions <em>Accomplished</em></h2>
+            <p class="sec-quote">"Every project below is a testament — not to what I was asked to do, but to what I made possible."</p>
+            <div class="conquests">
+                <div class="cq-card cq-large">
+                    <div class="cq-glow glow-teal"></div>
+                    <div class="cq-body">
+                        <div class="cq-meta"><span class="cq-domain">Utility & Energy</span><span class="cq-yr">2021 — Present</span></div>
+                        <h3>Atlas Platform<br><em>CLEAResult</em></h3>
+                        <p>"Seven utility giants. Three concurrent deployments. One unified platform spanning West, Central, and Eastern United States delivering energy efficiency at scale."</p>
+                        <div class="cq-nums">
+                            <div class="cqn"><span class="cqn-n">7+</span><span class="cqn-l">Utility Clients</span></div>
+                            <div class="cqn"><span class="cqn-n">3</span><span class="cqn-l">Concurrent Projects</span></div>
+                            <div class="cqn"><span class="cqn-n">5+</span><span class="cqn-l">States</span></div>
+                        </div>
+                        <div class="cq-tags"><span>Salesforce</span><span>Magento</span><span>Skedulo</span></div>
+                    </div>
+                </div>
+                <div class="cq-card">
+                    <div class="cq-glow glow-blue"></div>
+                    <div class="cq-body">
+                        <div class="cq-meta"><span class="cq-domain">Healthcare IT</span><span class="cq-yr">2021</span></div>
+                        <h3>Provider Data<br><em>Transformation BCBSA</em></h3>
+                        <p>"A nation's healthcare backbone. 36 plans. 50 states. One Product Owner."</p>
+                        <div class="cq-nums">
+                            <div class="cqn"><span class="cqn-n">36</span><span class="cqn-l">BCBS Plans</span></div>
+                            <div class="cqn"><span class="cqn-n">50</span><span class="cqn-l">States</span></div>
+                        </div>
+                        <div class="cq-tags"><span>FHIR R4</span><span>Ataccama</span><span>SAFe</span></div>
+                    </div>
+                </div>
+                <div class="cq-card">
+                    <div class="cq-glow glow-crimson"></div>
+                    <div class="cq-body">
+                        <div class="cq-meta"><span class="cq-domain">Healthcare IT</span><span class="cq-yr">2018 — 2020</span></div>
+                        <h3>Provider Records<br><em>Recovery BCBSIL</em></h3>
+                        <p>"54,000+ records broken. Medicare and Medicaid data flows severed. I found the breach. I closed it."</p>
+                        <div class="cq-nums">
+                            <div class="cqn"><span class="cqn-n">54K+</span><span class="cqn-l">Records Restored</span></div>
+                            <div class="cqn"><span class="cqn-n">106M+</span><span class="cqn-l">Members Served</span></div>
+                        </div>
+                        <div class="cq-tags"><span>TriZetto</span><span>27X EDI</span><span>FHIR</span></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- EDUCATION -->
     <section id="education">
-        <div class="section-container">
-            <h2 class="section-title">Education</h2>
-            <div class="education-grid">
+        <canvas id="stars-canvas"></canvas>
+        <div class="sec-inner">
+            <div class="sec-label"><span class="sl-num">05</span><span class="sl-name">The Foundation</span></div>
+            <h2 class="sec-title">Built on <em>Knowledge</em></h2>
+            <p class="sec-quote">"A guardian must understand every realm they protect. I did not study one field. I studied four — because the problems I solve demand nothing less."</p>
+            <div class="edu-cards">
                 <div class="edu-card">
-                    <div class="edu-icon"><i class="fas fa-graduation-cap"></i></div>
-                    <h3>MS – Information Technology</h3>
-                    <h4>University of the Cumberlands</h4>
-                    <span class="edu-year">2022</span>
+                    <div class="edu-yr">2022</div>
+                    <div class="edu-body">
+                        <div class="edu-ico"><i class="fas fa-laptop-code"></i></div>
+                        <h3>MS — Information Technology</h3>
+                        <p>University of the Cumberlands</p>
+                        <span class="edu-tag">Systems Architecture · IT Strategy · Database Management</span>
+                    </div>
                 </div>
                 <div class="edu-card">
-                    <div class="edu-icon"><i class="fas fa-shield-alt"></i></div>
-                    <h3>MS – Information System Security</h3>
-                    <h4>University of the Cumberlands</h4>
-                    <span class="edu-year">2020</span>
+                    <div class="edu-yr">2020</div>
+                    <div class="edu-body">
+                        <div class="edu-ico"><i class="fas fa-shield-alt"></i></div>
+                        <h3>MS — Information System Security</h3>
+                        <p>University of the Cumberlands</p>
+                        <span class="edu-tag">HIPAA Compliance · Cybersecurity · Risk Management</span>
+                    </div>
                 </div>
                 <div class="edu-card">
-                    <div class="edu-icon"><i class="fas fa-globe"></i></div>
-                    <h3>MS – International Commerce & Policy</h3>
-                    <h4>Valparaiso University</h4>
-                    <span class="edu-year">2017</span>
+                    <div class="edu-yr">2017</div>
+                    <div class="edu-body">
+                        <div class="edu-ico"><i class="fas fa-globe"></i></div>
+                        <h3>MS — International Commerce & Policy</h3>
+                        <p>Valparaiso University</p>
+                        <span class="edu-tag">Global Policy · Trade Frameworks · Strategic Thinking</span>
+                    </div>
                 </div>
                 <div class="edu-card">
-                    <div class="edu-icon"><i class="fas fa-university"></i></div>
-                    <h3>Bachelor of Commerce – Computers</h3>
-                    <h4>Osmania University</h4>
-                    <span class="edu-year">2014</span>
+                    <div class="edu-yr">2014</div>
+                    <div class="edu-body">
+                        <div class="edu-ico"><i class="fas fa-university"></i></div>
+                        <h3>BCom — Computers</h3>
+                        <p>Osmania University, India</p>
+                        <span class="edu-tag">Computing Fundamentals · Business Analytics · Finance</span>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- ========== CONTACT SECTION ========== -->
+    <!-- CONTACT -->
     <section id="contact">
-        <div class="section-container">
-            <h2 class="section-title">Let's Connect</h2>
-            <p class="contact-subtitle">If you're working on something at the crossroads of technology, healthcare, or energy — I'd love to connect.</p>
-            <div class="contact-cards">
-                <a href="mailto:ghousea61@gmail.com" class="contact-card">
-                    <i class="fas fa-envelope"></i>
-                    <span>ghousea61@gmail.com</span>
-                </a>
-                <a href="https://linkedin.com/in/ghouseahmed" target="_blank" class="contact-card">
-                    <i class="fab fa-linkedin"></i>
-                    <span>LinkedIn Profile</span>
-                </a>
-                <div class="contact-card">
-                    <i class="fas fa-map-marker-alt"></i>
-                    <span>Chicago, IL</span>
+        <canvas id="portal-canvas"></canvas>
+        <div class="sec-inner">
+            <div class="sec-label"><span class="sl-num">06</span><span class="sl-name">The Portal</span></div>
+            <h2 class="sec-title">Cross the <em>Bridge</em></h2>
+            <p class="sec-quote">"The Bifrost is open. If you are building something at the intersection of technology, healthcare, or energy — step forward. The bridge awaits."</p>
+            <div class="portal-grid">
+                <div class="portal-links">
+                    <a href="mailto:ghousea61@gmail.com" class="plink">
+                        <div class="plink-ico"><i class="fas fa-envelope"></i></div>
+                        <div class="plink-txt"><span class="plink-lbl">Send a message</span><span class="plink-val">ghousea61@gmail.com</span></div>
+                        <i class="fas fa-arrow-up-right plink-arr"></i>
+                    </a>
+                    <a href="https://linkedin.com/in/syedghouseahmed" target="_blank" class="plink">
+                        <div class="plink-ico"><i class="fab fa-linkedin"></i></div>
+                        <div class="plink-txt"><span class="plink-lbl">Connect on LinkedIn</span><span class="plink-val">SyedGhouseAhmed</span></div>
+                        <i class="fas fa-arrow-up-right plink-arr"></i>
+                    </a>
+                    <div class="plink no-hover">
+                        <div class="plink-ico"><i class="fas fa-map-marker-alt"></i></div>
+                        <div class="plink-txt"><span class="plink-lbl">Location</span><span class="plink-val">Chicago, Illinois</span></div>
+                    </div>
+                </div>
+                <div class="portal-form">
+                    <div class="form-card">
+                        <div class="form-head">
+                            <span>Open a Channel</span>
+                            <div class="form-status"><span class="status-dot"></span>Ready</div>
+                        </div>
+                        <input type="text" placeholder="Your Name" class="fi">
+                        <input type="email" placeholder="Your Email" class="fi">
+                        <textarea placeholder="What are you building?" class="fi fi-ta" rows="4"></textarea>
+                        <button class="fi-btn" id="sendBtn">Send Through the Portal <i class="fas fa-paper-plane"></i></button>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- ========== FOOTER ========== -->
     <footer>
-        <p>© 2026 Ghouse Ahmed · Built with passion & precision</p>
+        <div class="footer-inner">
+            <span class="footer-logo">GAS<span class="footer-dot"></span></span>
+            <p>© 2026 Ghouse Ahmed Syed · Keeper of the Bridge · Chicago, IL</p>
+            <span class="footer-tagline">Where Business Strategy Meets Technical Execution</span>
+        </div>
     </footer>
 
-    <!-- JavaScript -->
     <script src="script.js"></script>
-
 </body>
 </html>
